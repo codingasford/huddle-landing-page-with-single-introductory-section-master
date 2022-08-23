@@ -6,24 +6,25 @@
 
 
 body {
-    /* background-color: hsl(257, 40%, 49%); */
-    height: 100vh;
+    background-color: hsl(257, 40%, 49%);
 }
 
 main {
-    height: 100%;
     background-color: hsl(257, 40%, 49%);
     background-image: url(./Instructions/images/bg-desktop.svg);
-    background-size: 1440px;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 #huddle-logo {
-    padding: 2.5rem 3.2rem 4rem 3.2rem;
+    /* padding: 2.5rem 3.2rem 4rem 3.2rem; */
+    padding: 2vw 4vw 5vw 4vw;
+    
 }
 
 #huddle-logo-img {
-    height: 3rem;
+    max-height: 10vw;
 }
 
 
@@ -32,16 +33,21 @@ main {
 }
 
 #ui-img {
-    height: 26rem;
+    max-height: 30vw;
     padding-left: 3.2rem;
+    margin-left: 5vw;
+    margin-top: 2rem;
 }
 
 #text-container {
     margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #h1-container {
     margin-right: 5%;
+    font-size: clamp(0.7rem, 2vw, 1rem);
 }
 
 #text-container h1 {
@@ -54,14 +60,16 @@ main {
 #text {
     color: white;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: clamp(1vw, 1.2vw);
     font-family: "Poppins", sans-serif;
     margin-right: 5%;
     margin-bottom: 1.2rem;
 }
 
 #register-btn {
-    padding: 0.8rem 3rem 0.8rem 3rem;
+    margin-top: 1rem;
+    width: 50%;
+    height: 3rem;
     border-radius: 2rem;
     border-color: transparent;
     color:hsl(257, 40%, 49%);
@@ -75,3 +83,56 @@ main {
     cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+    #ui-img {
+        height: 35vw;
+        width: 40vw;
+        padding: 0;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #text-container {
+        text-align: center;
+    }
+
+    #register-btn {
+        place-self: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 450px) {
+    /* #flex-container {
+        flex-direction: column;
+    }
+
+    #ui-img {
+        max-height: 15rem;
+        max-width: 25rem;
+        align-self: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    } */
+
+    main {
+        height: 100%;
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(./Instructions/images/bg-mobile.svg);
+        background-size: 375px;
+        background-repeat: no-repeat;
+    }
+/* 
+    #text-container {
+        text-align: center;
+    }
+
+    #register-btn {
+        place-self: center;
+    } */
+} 

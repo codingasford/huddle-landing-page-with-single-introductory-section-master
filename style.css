@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     margin: 0;
 }
+
 
 body {
     /* background-color: hsl(257, 40%, 49%); */
@@ -15,9 +18,60 @@ main {
     background-repeat: no-repeat;
 }
 
+#huddle-logo {
+    padding: 2.5rem 3.2rem 4rem 3.2rem;
+}
+
+#huddle-logo-img {
+    height: 3rem;
+}
+
+
 #flex-container {
+    display: flex;
 }
 
 #ui-img {
-    height: 23rem;
+    height: 26rem;
+    padding-left: 3.2rem;
 }
+
+#text-container {
+    margin-left: 3rem;
+}
+
+#h1-container {
+    margin-right: 5%;
+}
+
+#text-container h1 {
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+#text {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    margin-right: 5%;
+    margin-bottom: 1.2rem;
+}
+
+#register-btn {
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    border-radius: 2rem;
+    border-color: transparent;
+    color:hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#register-btn:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
